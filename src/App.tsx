@@ -4,7 +4,6 @@ import { Pokemon } from "./pages/Pokemon";
 import { Pokemons } from "./pages/Pokemons";
 import { Items } from "./pages/items";
 
-
 function App() {
   return (
     <Router>
