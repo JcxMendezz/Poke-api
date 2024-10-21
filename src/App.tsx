@@ -1,22 +1,20 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import "./app.css";
-import { Pokemon } from "./pages/Pokemon";
-import { Pokemons } from "./pages/Pokemons";
-import { Items } from "./pages/items";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import "./App.css";
+import {Items, Pokemon, Pokemons} from "./pages";
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/Pokemons/:name" element={<Pokemon />} />
-          <Route path="/Pokemons" element={<Pokemons />} />
-          <Route path="/items" element={<Items />} />
-          <Route path="/" element={<Pokemons />} />
-        </Routes>
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="app">
+                <Routes>
+                    <Route path="/Pokemons/:name" element={<Pokemon/>}/>
+                    <Route path="/Pokemons" element={<Pokemons/>}/>
+                    <Route path="/items" element={<Items/>}/>
+                    <Route path="/" element={<Pokemons/>}/>
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

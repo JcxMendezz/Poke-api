@@ -1,7 +1,5 @@
-import * as React from 'react';
+const Items = () => {
+  return <div>ITEMS</div>;
+};
 
-export const Items = () => {
-  return (
-    <div>Items</div>
-  )
-}
+export default Items;
