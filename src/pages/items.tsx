@@ -6,7 +6,7 @@ const Items = () => {
     return (
         <div className={Styles['item-card']}>
             <Link to={"/pokemons/"}>
-                
+
                 <h1>Items</h1>
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
                      alt="pokeball"/>
