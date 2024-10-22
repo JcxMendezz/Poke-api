@@ -16,7 +16,7 @@ const Footer = () => {
             <Link
                 className={styles.footerLink}
                 onClick={(event) => event.preventDefault()}
-                to="/items"
+                to="/Items"
             >
                 <img className={styles.footerIcon} src={ItemsPic} alt="Pokemon" />
                 Items
