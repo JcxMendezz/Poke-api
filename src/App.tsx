@@ -9,8 +9,7 @@ function App() {
                 <Routes>
                     <Route path="/Pokemons/:name" element={<Pokemon/>}/>
                     <Route path="/Pokemons" element={<Pokemons/>}/>
-                    <Route path="/items" element={<Items items={[]
-                    }/>}/>
+                    <Route path="/items" element={<Items/>}/>
                     <Route path="/" element={<Pokemons/>}/>
                 </Routes>
             </div>
