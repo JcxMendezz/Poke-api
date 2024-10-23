@@ -1,5 +1,6 @@
 .pokemon {
-    height: 200vh;
+    height: 100vh;
+
 }
 
 .body {
@@ -16,30 +17,42 @@
     outline: none;
     display: flex;
     align-items: center;
-    background: none;
-    padding: 50px 50px 0 50px;
+    padding: 50px 50px;
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(
+            rgba(124, 166, 252, 1) 25%,
+            rgba(119, 235, 129, 1) 100%
+    );
+    color: GrayText;
+
 }
 
 .pokeballImg {
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 .pokemonInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0;
+    gap: 2px;
+    margin: 10px 0;
+    background: -webkit-linear-gradient(
+            rgba(124, 166, 252, 1) 25%,
+            rgba(119, 235, 129, 1) 100%
+    );;
+    color: Black;
 }
 
 .pokemonInfoImg {
-    width: 200px;
+    width: 100px;
     margin: 100px 0;
 }
 
 .pokemonTitle {
     margin: 50px 0;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
 }
