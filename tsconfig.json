@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esNext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -26,6 +26,10 @@
     ]
   },
   "include": [
-    "src"
+    "src",
+    "Tests/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
