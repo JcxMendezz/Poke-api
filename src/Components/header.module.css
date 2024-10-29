@@ -7,6 +7,22 @@
     background: var(--bg-gradient);
 }
 
+.title {
+    margin: 0;
+    padding: 8px 0; /* Espacio vertical para mejor separación */
+    font-size: 28px; /* Tamaño ligeramente mayor */
+    font-weight: 700; /* Texto más grueso para destacar */
+    color: #1e3a8a; /* Un color azul oscuro elegante */
+    text-align: center;
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    letter-spacing: 1.5px; /* Añade espacio entre letras */
+    line-height: 1.2; /* Ajusta el espaciado entre líneas */
+    background: linear-gradient(45deg, #292929, #7ca6fc); /* Fondo degradado para el texto */
+    -webkit-background-clip: text; /* Clip del fondo al texto */
+    -webkit-text-fill-color: transparent; /* Hace el fondo visible en el texto */
+}
+
+
 .input {
     background-color: rgba(121, 121, 121, 0.267);
     padding: 10px 10px;
