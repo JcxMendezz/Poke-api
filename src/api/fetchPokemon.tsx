@@ -1,7 +1,7 @@
 // https://pokeapi.co/api/v2/pokemon/bulbasaur
 
-import { PokemonDetails } from "../Types/images";
-import { formatName } from "../Utils/utils";
+import {PokemonDetails} from "../Types/images";
+import {formatName} from "../Utils/utils";
 
 export async function fetchPokemon(
     pokemonName: string

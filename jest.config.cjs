@@ -4,6 +4,7 @@
  */
 
 // Configuración de Jest para proyectos TypeScript
+// eslint-disable-next-line no-undef
 module.exports = {
     testEnvironment: 'jsdom',
     transform: {

@@ -4,6 +4,7 @@ import { fetchPokemons } from "../api/FetchPokemons";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import LoadingScreen from "../Components/LoadingScreen";
+import React from "react";
 
 import { Pokemon } from "../Types/images";
 import { waitFor } from "../Utils/utils";
@@ -34,31 +35,31 @@ const Pokemons = () => {
   });
 
   return (
-      <>
-        <Header query={query} setQuery={setQuery} />
-        <main>
-          <nav className={styles.nav}>
-            {filteredPokemons?.slice(0, 151).map((pokemon) => (
-                <Link
-                    key={pokemon.id}
-                    className={styles.listItem}
-                    to={`/pokemons/${pokemon.name.toLowerCase()}`}
-                >
-                  <img
-                      className={styles.listItemIcon}
-                      src={pokemon.imgSrc}
-                      alt={pokemon.name}
-                  />
-                  <div className={styles.listItemText}>
-                    <span>{pokemon.name}</span>
-                    <span>{pokemon.id}</span>
-                  </div>
-                </Link>
-            ))}
-          </nav>
-        </main>
-        <Footer />
-      </>
+    <>
+      <Header query={query} setQuery={setQuery} />
+      <main>
+        <nav className={styles.nav}>
+          {filteredPokemons?.slice(0, 151).map((pokemon) => (
+            <Link
+              key={pokemon.id}
+              className={styles.listItem}
+              to={`/pokemons/${pokemon.name.toLowerCase()}`}
+            >
+              <img
+                className={styles.listItemIcon}
+                src={pokemon.imgSrc}
+                alt={pokemon.name}
+              />
+              <div className={styles.listItemText}>
+                <span>{pokemon.name}</span>
+                <span>{pokemon.id}</span>
+              </div>
+            </Link>
+          ))}
+        </nav>
+      </main>
+      <Footer />
+    </>
   );
 };
 
